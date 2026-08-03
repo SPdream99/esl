@@ -1,0 +1,42 @@
+# ==========================================
+# CẤU HÌNH GITIGNORE CHUẨN (NESTJS + PRISMA + NEXT.JS)
+# ==========================================
+
+# 1. Thư viện & Logs
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# 2. Môi trường & Bảo mật (CỰC KỲ QUAN TRỌNG)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+
+# 3. Kết quả Build
+dist/          # Dành cho NestJS Backend
+.next/         # Dành cho Next.js Frontend (Sau này)
+out/
+build/
+
+# 4. Database (Đặc thù của dự án này)
+# Không bao giờ commit file DB local lên kho lưu trữ
+*.db
+*.sqlite
+*.sqlite3
+*.sqlite-journal
+
+# 5. Hệ điều hành & Công cụ Code
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
